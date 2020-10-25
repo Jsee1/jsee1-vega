@@ -9,11 +9,17 @@
 </head>
 <body>
 
-<div id="vis"></div>
+<div id="map"></div>
+<div id="scatter"></div>
 
 <script type="text/javascript">
   var spec = "https://jsee1.github.io/jsee1-vega/basic-map.vg.json";
-  vegaEmbed('#vis', spec).then(function(result) {
+  vegaEmbed('#map', spec).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+  var spec2 = "https://jsee1.github.io/jsee1-vega/basic-map.vg.json";
+  vegaEmbed('#scatter', spec).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>
