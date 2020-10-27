@@ -1,13 +1,9 @@
-State,StateGini,,,
-New South Wales,0.496,,,
-Victoria,0.480,,,
-Queensland,0.468,,,
-South Australia,0.454,,,
-Western Australia,0.487,,,
-Tasmania,0.448,,,
-Northern Territory,0.424,,,
-Australian Capital Territory,0.422,,,
-,,,,
-,,,,
-,,,,
-,,,,
+State,StateGini
+New South Wales,0.496
+Victoria,0.480
+Queensland,0.468
+South Australia,0.454
+Western Australia,0.487
+Tasmania,0.448
+Northern Territory,0.424
+Australian Capital Territory,0.422
