@@ -2,6 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "width": 300,
   "height": {"step": 15},
+  "title" : "Comparison of selected Global Gini Indexes",
   "data": {"url": "https://raw.githubusercontent.com/Jsee1/jsee1-vega/main/data/SelectCountryGini.csv"},
   "encoding": {
     "y": {
@@ -11,6 +12,7 @@
   },
   "layer": [{
     "mark": {
+      "stroke": "black",
       "type": "bar"
     },
     "selection": {
@@ -29,7 +31,7 @@
         "field": "GiniIndex",
         "type": "quantitative",
         "scale": {"domain": [0.3, 0.6]},
-        "title": "Mean IMDB Ratings"
+        "title": "Country Gini Index"
       },
       "fillOpacity": {
         "condition": {"selection": "select", "value": 1},
@@ -55,8 +57,7 @@
   {
     "mark": {"type": "text", "align": "left", "x": 5},
     "encoding": {
-      "text": {"field": "GiniIndex"},
-      "detail": {"aggregate": "count"}
+      "text": {"field": "GiniIndex"}
     }
   }]
 }

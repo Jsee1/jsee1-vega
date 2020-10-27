@@ -1,0 +1,21 @@
+body 
+{
+    background-color: powderblue;
+}
+.generic 
+{
+    vertical-align: middle;
+    background-color: green;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+
+}
+.main
+{
+    background-color: aquamarine;
+}
+p 
+    {
+    color: red;
+}
