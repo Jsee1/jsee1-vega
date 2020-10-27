@@ -11,6 +11,9 @@
 
 <div id="map"></div>
 <div id="scatter"></div>
+<div id="StateBar"></div>
+<div id="GlobalBar"></div>
+
 
 <script type="text/javascript">
   var spec = "https://jsee1.github.io/jsee1-vega/basic-map.vg.json";
@@ -20,6 +23,16 @@
 
   var spec2 = "https://jsee1.github.io/jsee1-vega/interactive-scatter.vg.json";
   vegaEmbed('#scatter', spec2).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+  var spec3 = "https://jsee1.github.io/jsee1-vega/state-bar-chart.vg.json";
+  vegaEmbed('#StateBar', spec3).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+    var spec4 = "https://jsee1.github.io/jsee1-vega/global-bar-chart.vg.json";
+  vegaEmbed('#GlobalBar', spec4).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>

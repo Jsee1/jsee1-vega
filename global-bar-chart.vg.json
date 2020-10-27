@@ -1,0 +1,62 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 300,
+  "height": {"step": 15},
+  "data": {"url": "https://raw.githubusercontent.com/Jsee1/jsee1-vega/main/data/SelectCountryGini.csv"},
+  "encoding": {
+    "y": {
+      "field": "Country",
+      "type": "nominal"
+    }
+  },
+  "layer": [{
+    "mark": {
+      "type": "bar"
+    },
+    "selection": {
+      "highlight": {"type": "single", "empty": "none", "on": "mouseover"},
+      "select": {"type": "multi"}
+    },
+    "encoding": {
+      "color": {
+        "condition" : {
+          "test" :"datum['Country'] == 'Australia'", 
+          "value" : "orange" 
+          },
+        "value" : "lightblue"
+      },
+      "x": {
+        "field": "GiniIndex",
+        "type": "quantitative",
+        "scale": {"domain": [0.3, 0.6]},
+        "title": "Mean IMDB Ratings"
+      },
+      "fillOpacity": {
+        "condition": {"selection": "select", "value": 1},
+        "value": 0.3
+    },
+    "strokeWidth": {
+      "condition": [
+          {
+            "test": {
+              "and": [
+                {"selection": "select"},
+                "length(data(\"select_store\"))"
+              ]
+            },
+            "value": 2
+          },
+          {"selection": "highlight", "value": 1}
+        ],
+        "value": 0
+        }
+      }
+  }, 
+  {
+    "mark": {"type": "text", "align": "left", "x": 5},
+    "encoding": {
+      "text": {"field": "GiniIndex"},
+      "detail": {"aggregate": "count"}
+    }
+  }]
+}

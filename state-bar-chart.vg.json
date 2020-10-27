@@ -1,0 +1,39 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "width": 300,
+    "height": {"step": 30},
+    "data": {"url": "https://raw.githubusercontent.com/Jsee1/jsee1-vega/main/data/StateLevelGini.csv"},
+    "encoding": {
+      "y": {
+        "field": "State",
+        "type": "nominal"
+      }
+    },
+    "layer": [{
+      "mark": {
+        "type": "bar"
+      },
+      "encoding": {
+        "color": {
+          "condition" : {
+            "test" :"datum['State'] == 'Victoria'", 
+            "value" : "orange" 
+            },
+          "value" : "lightblue"
+        },
+        "x": {
+          "field": "StateGini",
+          "type": "quantitative",
+          "scale": {"domain": [0.3, 0.6]},
+          "title": "Mean IMDB Ratings"
+        }
+      }
+    }, {
+      "mark": {"type": "text", "align": "left", "x": 5},
+      "encoding": {
+        "text": {"field": "StateGini"},
+        "detail": {"aggregate": "count"}
+      }
+    }]
+  }
+  
