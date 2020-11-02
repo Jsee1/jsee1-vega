@@ -15,7 +15,98 @@ body
 {
     background-color: aquamarine;
 }
+.Boxbox
+{
+    background-color: white;
+    position: absolute;
+    max-width: 1050px;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    left: 5%;
+    height:3000px;
+}
+.title
+{
+
+    font-size: 72px;
+    text-align: center;
+}
+.mapSmall
+{
+    position: relative;
+    left:559px;
+    bottom: 450px;
+    display: inline-block;
+    width: 50%;
+}
+.mapBig
+{
+    bottom: 450px;
+    position: relative;
+}
+.Scatterplot
+{
+    position: relative;
+    bottom: 485px;
+    right: 300px;
+
+}
+.textMaps
+{
+    position: relative;
+    max-width: 525px;
+    display: inline-block;
+}
+.textMaps2
+{
+    position: relative;
+    left:700px;
+    bottom: 850px;
+    max-width: 300px;
+}
+.textScatter
+{
+    position: relative;
+    right: 700px;
+    top: 100px;
+}
+.Text1
+{
+    display: inline-block;
+}
+.stateText
+{
+    position: relative;
+    bottom:400px;
+    right: 200px;
+    width: 550px
+}
+.StateChart
+{
+    position: relative;
+    bottom: 650px;
+    right: 700px;
+}
+.GlobalChart
+{
+    position: relative;
+    bottom: 650px;
+    right: 65px;
+}
+.globalText
+{
+    position: relative;
+    bottom: 1200px;
+    right: 700px;
+    width: 600px;
+}
+
+h1
+{
+    font-size: 20px;
+}
 p 
-    {
-    color: red;
+{
+    font-size :20px;
 }

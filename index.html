@@ -10,40 +10,99 @@
 </head>
 <body>
 
-<div id="main" class="main">
-<br>
-<hr>
-<div id="map" class="generic"></div>
-<br>
-<hr>
-<div id="scatter" class="generic"></div>
-<br>
-<hr>
-<div id="StateBar" class="generic"></div>
-<br>
-<hr>
-<div id="GlobalBar" class="generic"></div>
-<div>
+
+<div class="Boxbox">
+  <div id="title" class="title">Income Inequality in Victoria</div>
+
+  <div>
+    <div id="Text1" class="Text1"}>
+      <p>
+        Income Inequality is a term specifically describing the degree to which income is even spread throughout a population. It is important to note that income inequality has no bearing on a countries’ overall wealth; A poor country can be relatively equal, a rick country can be relatively unequal and vice versa. 
+      Low levels of Income Inequality is not necessarily harmful to a society or country. However, high levels of income inequality is associated with many risks that affect the development and growth of new generations and individuals. This is due to its consistent correlations with low accessibility to health care systems (public and private), unequal access to quality schooling, and unstable economic growth.
+      </p>
+    </div>
+    <div class="textMaps">
+      <p>
+      These effects have far reach impacts on all aspects of life. British researchers compared statistics from the USA, Japan, and Finland to discover that that social cohesion, life expectancy, and social mobility is increased in countries with low income inequality.
+      <br><br>
+      So how do we measure it?  <br><br>
+      A commonly accepted method is to generate and compare a Gini Coefficient for a set of areas – In this case using Local Government Areas of Victoria and Countries. In simple terms, the Gini coefficient is obtained by analysing a Lorenz curve; a graph indicating the distribution of wealth by population. Its value may range between 0 and 1, where 0 means perfect equality (All members of a population earn the same amount) and 1 meaning complete inequality (One member earns all of the income in a population). 
+      </p>
+    </div>
+    <div id="mapSmall" class="mapSmall">  
+    </div>
+
+    <div id="mapBig" class="mapBig"></div>
+
+    <div class="textMaps2">
+    <p>
+By looking at both maps it can be seen how Gini scores tend to be high around inner Melbourne, before decreasing as it reaches the outer edges of greater Melbourne, before increasing again as we move further out. <br><br>To an extent this follows the ideas behind inner city areas being more expensive (And thus attracting wealthier individuals) than out suburbs.
+    </p>
+
+  <div>
+
+
+
+  <div class="textScatter">
+    <p>
+By comparing Mean vs Median income in each LGA it becomes possible to compare income inequality between LGA’s in a more quantitative way. The reason this is possible is because Mean income is the relative to the total sum earnt and can be skewed by extremely high or low income earners whereas the median will indicate the central location of the data and will thus provide a more accurate idea of what the ‘average’ person earns in a given LGA. <br><br>
+As can be seen, Stonnington is by far the most unequal LGA in all of Victoria, with the average income being $43, 000 more than the median income. This indicates that there are a few extremely wealthy individuals living there, earning far more than their fellows. 
+<br>(Note: You can pan and zoom with the mouse on the Scatterplot)
+    </P>
+  </div>
+
+  <div id="Scatterplot" class="Scatterplot"></div>
+
+  <div id="Text3" class="Text3"></div>
+
+  <div class="stateText">
+    <p>
+Overall, Victoria does not perform too well in comparison to its fellow states and territories. It ranks 3rd behind western Australia and is only 0.016 points away from being the highest and 0.058 points fro, being the lowest. The ACT is the most equal in all of Australia, most likely due the high number of civil servants there earning a government regulated salary. Interestingly the states/territories with the lowest income inequality index ALSO have the smallest populations in Australia  </p>
+
+  </div>
+
+
+  <div id="StateChart" class="StateChart"></div>
+
+  <div id="GlobalChart" class="GlobalChart"></div>
+
+  <div class="globalText">
+    <p>
+Here is the same graph but containing Gini Coefficient scores from a selection of mostly Western and some Eastern countries calculated for 2016. When comparing between countries it is important to note factors such as recent major events as well as general population growth and economic development. This means it is often easier to compare similar nations together, such as Australia and New Zealand. Despite being often considered two of the same in regards to culture, New Zealand a far better Gini Score than Australia. In this case, articles by the ABS suggest this may be due to more generous social programs present in New Zealand. Another interesting comparison is between Japan and Korea. Both countries are highly technologically advanced societies featuring massive multinational conglomerates, however South Korea has an extremely low Gini score in comparison to Japan, and the lowest overall. 
+<br><br>
+In comparison to the rest of the world, Australia is performing well, scoring 0.008 above the median score from Japan (0.462). Furthermore our social programs help alleviate many of the issues created by income inequality (Tax and transfer system of taxing the wealthy to pay for social programs benefitting the poor) as this helps fund schools and other schemes. However, there is still much more than can be done to reduce income inequality in Australia and push Australia further down the list for years to come.
+    </p>
+
+  </div>
+
+</div>
+
+
 
 
 <script type="text/javascript">
+  var spec = "https://jsee1.github.io/jsee1-vega/greater-melbourne-map.vg.json";
+  vegaEmbed('#mapSmall', spec).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
   var spec = "https://jsee1.github.io/jsee1-vega/basic-map.vg.json";
-  vegaEmbed('#map', spec).then(function(result) {
+  vegaEmbed('#mapBig', spec).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 
   var spec2 = "https://jsee1.github.io/jsee1-vega/interactive-scatter.vg.json";
-  vegaEmbed('#scatter', spec2).then(function(result) {
+  vegaEmbed('#Scatterplot', spec2).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 
   var spec3 = "https://jsee1.github.io/jsee1-vega/state-bar-chart.vg.json";
-  vegaEmbed('#StateBar', spec3).then(function(result) {
+  vegaEmbed('#StateChart', spec3).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 
     var spec4 = "https://jsee1.github.io/jsee1-vega/global-bar-chart.vg.json";
-  vegaEmbed('#GlobalBar', spec4).then(function(result) {
+  vegaEmbed('#GlobalChart', spec4).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>
