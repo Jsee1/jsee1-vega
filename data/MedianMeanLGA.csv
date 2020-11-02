@@ -1,81 +1,81 @@
-LGA NAME,Area,Earners,Median age of earners,Sum,Median,Mean
-Alpine,High Country,7301,50,331922611,37350,45463
-Ararat,Central Highlands,6033,47,297678219,41614,49342
-Ballarat,Ballarat,55603,43,3093272861,45942,55631
-Banyule,Greater Melbourne,74032,43,4992017742,52841,67431
-Bass Coast,Phillip Island,17795,49,806998059,36330,45350
-Baw Baw,Gippsland,28054,46,1464706554,42534,52210
-Bayside,Inner Melbourne,64242,48,6476275726,59884,100811
-Benalla,High Country,7530,50,349652266,39583,46435
-Boroondara,Greater Melbourne,112506,45,10839206995,57294,96343
-Brimbank,Greater Melbourne,101607,39,5044496780,43443,49647
-Buloke,Wimmera,3440,50,157399048,36990,45756
-Campaspe,Central Murray,21062,47,985492313,41043,46790
-Cardinia,Melbourne East,55168,40,3055492506,48261,55385
-Casey,Greater Melbourne,170611,39,9222275787,47535,54054
-Central Goldfields,Bendigo Loddon,5665,48,238027931,36418,42017
-Colac-Otway,Great Ocean Road,12694,46,594551148,40666,46837
-Corangamite,Great Ocean Road,9252,48,416791395,37867,45049
-Darebin,Greater Melbourne,85087,38,5215204959,49829,61293
-East Gippsland,Gippsland,23635,50,1081381367,37743,45753
-Frankston,Peninsula,76070,42,4218309004,48613,55453
-Gannawarra,Mallee,5628,50,230481779,36650,40953
-Glen Eira,Greater Melbourne,89334,42,6716749866,54054,75187
-Glenelg,Great Ocean Road,10655,49,562241529,43360,52768
-Golden Plains,Ballarat,12778,44,700858444,47096,54849
-Greater Bendigo,Bendigo Loddon,61292,44,3243485691,45060,52919
-Greater Dandenong,Greater Melbourne,78601,37,3554406218,40267,45221
-Greater Geelong,Geelong and the Bellarine,133639,43,7701583134,46551,57630
-Greater Shepparton,Goulburn,35394,44,1747419291,42398,49370
-Hepburn,Ballarat,8377,49,413989125,38707,49420
-Hindmarsh,Wimmera,3009,50,146835554,42626,48799
-Hobsons Bay,Greater Melbourne,51956,41,3503790317,54105,67438
-Horsham,Western Grampians,11679,46,584112661,43865,50014
-Hume,Greater Melbourne,102302,38,5368811790,46079,52480
-Indigo,High Country,9608,48,492583465,44638,51268
-Kingston,Greater Melbourne,91713,43,5691983612,50583,62063
-Knox,Greater Melbourne,94044,43,5312027393,47962,56484
-Latrobe,Gippsland,37493,44,2186347532,46252,58313
-Loddon,Bendigo Loddon,3767,51,162204569,36279,43059
-Macedon Ranges,Macedon,27783,46,1812770006,50553,65247
-Manningham,Greater Melbourne,72673,47,4761145793,45293,65515
-Mansfield,High Country,5086,50,246105594,36559,48389
-Maribyrnong,Melbourne East,50028,36,3049200212,50819,60950
-Maroondah,Greater Melbourne,66228,43,3876345281,49438,58530
-Melbourne,Inner Melbourne,86974,32,5944486151,44432,68348
-Melton,Greater Melbourne,67830,39,3793950096,49979,55933
-Mildura,Mallee,29312,44,1435636290,41936,48978
-Mitchell,Goulburn,22640,43,1237628489,48140,54666
-Moira,Central Murray,15745,47,707317976,38852,44923
-Monash,Greater Melbourne,106571,43,6245360754,44559,58603
-Moonee Valley,Greater Melbourne,71940,41,5092683891,54730,70791
-Moorabool,Macedon,18609,44,1089938234,50094,58570
-Moreland,Greater Melbourne,98731,36,5910545787,50025,59865
-Mornington Peninsula,Peninsula,91571,48,5551123810,44455,60621
-Mount Alexander,Bendigo Loddon,9981,50,480343090,39478,48126
-Moyne,Great Ocean Road,9888,47,501186816,41985,50686
-Murrindindi,Melbourne East,7933,49,381320978,39257,48068
-Nillumbik,Melbourne East,39766,46,2796268022,53764,70318
-Northern Grampians,Central Highlands,6275,48,290097067,39193,46231
-Port Phillip,Inner Melbourne,72690,37,6274920921,60039,86324
-Pyrenees,Central Highlands,3569,50,155068064,36617,43449
-Queenscliffe,Geelong and the Bellarine,1928,59,113367619,38834,58801
-South Gippsland,Gippsland,16212,49,764412084,37334,47151
-Southern Grampians,Western Grampians,9608,48,474331303,41393,49368
-Stonnington,Greater Melbourne,74512,38,7825670887,61847,105026
-Strathbogie,Goulburn,5863,51,271231863,39500,46262
-Surf Coast,Great Ocean Road,19460,46,1191797629,46109,61243
-Swan Hill,Mallee,11619,44,583945124,42046,50258
-Towong,High Country,3569,52,169680134,39379,47543
-Wangaratta,High Country,16182,47,803631011,42578,49662
-Warrnambool,Great Ocean Road,20087,43,1054384707,44274,52491
-Wellington,Gippsland,22885,46,1208093089,41816,52790
-West Wimmera,Western Grampians,2357,51,114352076,41270,48516
-Whitehorse,Greater Melbourne,97054,43,5926218121,45394,61061
-Whittlesea,Greater Melbourne,109101,38,5802834511,47156,53188
-Wodonga,High Country,22412,42,1199559626,48356,53523
-Wyndham,Greater Melbourne,125625,37,7058541438,49242,56187
-Yarra,Greater Melbourne,60867,35,4927266814,60413,80951
-Yarra Ranges,Melbourne East,90448,44,5092093975,47473,56299
-Yarriambiack,Wimmera,3623,51,184019104,40701,50792
-Total,,3474938,42,2.13669E+11,47709,61489
+LGA NAME,Area,Earners,Median age of earners,Sum,Median,Mean,,,,,,,
+Alpine,Hume,7301,50,331922611,37350,45463,,,,,,,
+Ararat,Grampians,6033,47,297678219,41614,49342,,,,,,,
+Ballarat,Grampians,55603,43,3093272861,45942,55631,,,,,,,
+Banyule,Greater Melbourne,74032,43,4992017742,52841,67431,,,,,,,
+Bass Coast,Gippsland,17795,49,806998059,36330,45350,,,,,,,
+Baw Baw,Gippsland,28054,46,1464706554,42534,52210,,,,,,,
+Bayside,Greater Melbourne,64242,48,6476275726,59884,100811,,,,,,,
+Benalla,Hume,7530,50,349652266,39583,46435,,,,,,,Grampians
+Boroondara,Greater Melbourne,112506,45,10839206995,57294,96343,,,,,,,
+Brimbank,Greater Melbourne,101607,39,5044496780,43443,49647,,,,,,,
+Buloke,Mallee,3440,50,157399048,36990,45756,,,,,,,South West Victoria
+Campaspe,Mallee,21062,47,985492313,41043,46790,,,,,,,
+Cardinia,Greater Melbourne,55168,40,3055492506,48261,55385,,,,Gippsland,,,
+Casey,Greater Melbourne,170611,39,9222275787,47535,54054,,,,,,,
+Central Goldfields,Mallee,5665,48,238027931,36418,42017,,,,,,,
+Colac-Otway,South West Victoria,12694,46,594551148,40666,46837,,,,,,,
+Corangamite,South West Victoria,9252,48,416791395,37867,45049,,,,,,,
+Darebin,Greater Melbourne,85087,38,5215204959,49829,61293,,,,,,,
+East Gippsland,Gippsland,23635,50,1081381367,37743,45753,,,,,,,
+Frankston,Greater Melbourne,76070,42,4218309004,48613,55453,,,,,,,
+Gannawarra,Mallee,5628,50,230481779,36650,40953,,,,,,,
+Glen Eira,Greater Melbourne,89334,42,6716749866,54054,75187,,,,,,,
+Glenelg,South West Victoria,10655,49,562241529,43360,52768,,,,,,,
+Golden Plains,Grampians,12778,44,700858444,47096,54849,,,,,,,
+Greater Bendigo,Mallee,61292,44,3243485691,45060,52919,,,,,,,
+Greater Dandenong,Greater Melbourne,78601,37,3554406218,40267,45221,,,,,,,
+Greater Geelong,South West Victoria,133639,43,7701583134,46551,57630,,,,,,,
+Greater Shepparton,Hume,35394,44,1747419291,42398,49370,,,,,,,
+Hepburn,Grampians,8377,49,413989125,38707,49420,,,,,,,
+Hindmarsh,Grampians,3009,50,146835554,42626,48799,,,,,,,
+Hobsons Bay,Greater Melbourne,51956,41,3503790317,54105,67438,,,,,,,
+Horsham,Grampians,11679,46,584112661,43865,50014,,,,,,,
+Hume,Greater Melbourne,102302,38,5368811790,46079,52480,,,,,,,
+Indigo,Hume,9608,48,492583465,44638,51268,,,,,,,
+Kingston,Greater Melbourne,91713,43,5691983612,50583,62063,,,,,,,
+Knox,Greater Melbourne,94044,43,5312027393,47962,56484,,,,,,,
+Latrobe,Gippsland,37493,44,2186347532,46252,58313,,,,,,,
+Loddon,Mallee,3767,51,162204569,36279,43059,,,,,,,
+Macedon Ranges,Mallee,27783,46,1812770006,50553,65247,,,,,,,
+Manningham,Greater Melbourne,72673,47,4761145793,45293,65515,,,,,,,
+Mansfield,Hume,5086,50,246105594,36559,48389,,,,,,,
+Maribyrnong,Greater Melbourne,50028,36,3049200212,50819,60950,,,,,,,
+Maroondah,Greater Melbourne,66228,43,3876345281,49438,58530,,,,,,,
+Melbourne,Greater Melbourne,86974,32,5944486151,44432,68348,,,,,,,
+Melton,Greater Melbourne,67830,39,3793950096,49979,55933,,,,,,,
+Mildura,Mallee,29312,44,1435636290,41936,48978,,,,,,,
+Mitchell,Hume,22640,43,1237628489,48140,54666,,,,,,,
+Moira,Hume,15745,47,707317976,38852,44923,,,,,,,
+Monash,Greater Melbourne,106571,43,6245360754,44559,58603,,,,,,,
+Moonee Valley,Greater Melbourne,71940,41,5092683891,54730,70791,,,,,,,
+Moorabool,Grampians,18609,44,1089938234,50094,58570,,,,,,,
+Moreland,Greater Melbourne,98731,36,5910545787,50025,59865,,,,,,,
+Mornington Peninsula,Greater Melbourne,91571,48,5551123810,44455,60621,,,,,,,
+Mount Alexander,Mallee,9981,50,480343090,39478,48126,,,,,,,
+Moyne,South West Victoria,9888,47,501186816,41985,50686,,,,,,,
+Murrindindi,Hume,7933,49,381320978,39257,48068,,,,,,,
+Nillumbik,Greater Melbourne,39766,46,2796268022,53764,70318,,,,,,,
+Northern Grampians,Grampians,6275,48,290097067,39193,46231,,,,,,,
+Port Phillip,Greater Melbourne,72690,37,6274920921,60039,86324,,,,,,,
+Pyrenees,Grampians,3569,50,155068064,36617,43449,,,,,,,
+Queenscliffe,South West Victoria,1928,59,113367619,38834,58801,,,,,,,
+South Gippsland,Gippsland,16212,49,764412084,37334,47151,,,,,,,
+Southern Grampians,South West Victoria,9608,48,474331303,41393,49368,,,,,,,
+Stonnington,Greater Melbourne,74512,38,7825670887,61847,105026,,,,,,,
+Strathbogie,Hume,5863,51,271231863,39500,46262,,,,,,,
+Surf Coast,South West Victoria,19460,46,1191797629,46109,61243,,,,,,,
+Swan Hill,Mallee,11619,44,583945124,42046,50258,,,,,,,
+Towong,Hume,3569,52,169680134,39379,47543,,,,,,,
+Wangaratta,Hume,16182,47,803631011,42578,49662,,,,,,,
+Warrnambool,South West Victoria,20087,43,1054384707,44274,52491,,,,,,,
+Wellington,Gippsland,22885,46,1208093089,41816,52790,,,,,,,
+West Wimmera,Grampians,2357,51,114352076,41270,48516,,,,,,,
+Whitehorse,Greater Melbourne,97054,43,5926218121,45394,61061,,,,,,,
+Whittlesea,Greater Melbourne,109101,38,5802834511,47156,53188,,,,,,,
+Wodonga,Hume,22412,42,1199559626,48356,53523,,,,,,,
+Wyndham,Greater Melbourne,125625,37,7058541438,49242,56187,,,,,,,
+Yarra,Greater Melbourne,60867,35,4927266814,60413,80951,,,,,,,
+Yarra Ranges,Greater Melbourne,90448,44,5092093975,47473,56299,,,,,,,
+Yarriambiack,Grampians,3623,51,184019104,40701,50792,,,,,,,
+Total,,3474938,42,2.14E+11,47709,61489,,,,,,,
