@@ -1,103 +1,113 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-    "width": 500,
-    "height": 400,
-    "title": "Median Vs Average Income per person by Victorian Local Government Areas",
-    "data": {
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 500,
+  "height": 400,
+  "title": "Median Vs Average Income per person by Victorian Local Government Areas",
+  "data": {
     "url": "https://raw.githubusercontent.com/Jsee1/jsee1-vega/main/data/MedianMeanLGA.csv"
-   },
-   "params": [
-     {
-    "name": "EarnersThreshold",
-    "value": 0,
-    "bind": {
-      "input": "range",
-      "min": 0,
-      "max": 150000,
-      "step": 5000,
-      "name": "Minimum Population: "
-    }
-   },
-   {
-  
-   }
-   ],
-   "encoding": {
-        "x": {
-        "field": "Median",
-        "type": "quantitative",
-        "title": "Median Income per person",
-        "scale": {"domain": [35000, 65000]}
-    },
-      "y": {
-        "title": "Average Income per person",
-        "field": "Mean",
-        "type": "quantitative",
-        "scale": {"domain": [35000, 110000]}  
-        }
-   },
-   "layer" : [
-     {
-      "transform": [
-        {"filter": "datum.Earners > EarnersThreshold"},
-        {"filter": "datum.Earners < 1000000" }
-      ],
-        "mark": "circle",
-        "encoding": {
-          "color": {
-            "title": "Region",
-            "field": "Area",
-            "type": "nominal"
-        },
-          "size": {
-          "field": "Earners",
-          "type": "quantitative"
-          },
-          "tooltip": [
-            {"field": "LGA NAME", "type": "nominal", "title": "Local Government Area"},
-            {"field": "Median", "type": "quantitative", "title": "Median Income $"},
-            {"field": "Mean", "type": "quantitative", "title": "Average Income $"}
-          ]
+  },
+  "params": [
+    {
+      "name": "EarnersThreshold",
+      "value": 0,
+      "bind": {
+        "input": "range",
+        "min": 0,
+        "max": 150000,
+        "step": 5000,
+        "name": "Minimum Population: "
       }
     },
+    {}
+  ],  
+  "encoding": {
+    "x": {
+      "field": "Median",
+      "type": "quantitative",
+      "title": "Median Income per person",
+      "scale": {"domain": [0, 110000]}
+    },
+    "y": {
+      "title": "Average Income per person",
+      "field": "Mean",
+      "type": "quantitative",
+      "scale": {"domain": [0, 110000]}
+    }
+  },
+  "layer": [
     {
-    "mark": {
-      "type": "text",
-      "align": "right",
-      "baseline": "middle",
-      "dx": -12,
-      "fontSize": 11.5,
-      "fontStyle": "italic"
-      },
+      "transform": [
+        {"filter": "datum.Earners > EarnersThreshold"},
+        {"filter": "datum.Earners < 1000000"}
+      ],
+        "selection": {
+    "grid": {
+      "type": "interval", "bind": "scales"
+    }
+  },
+      "mark": "circle",
       "encoding": {
-        "text": {"field": "LGA NAME", "type": "nominal"},
-        "color": {"value": "black"},
-        "opacity": {
-        "condition": {
-        "test": "datum['LGA NAME'] == 'Monash' || datum['LGA NAME'] == 'Melbourne' || datum['LGA NAME'] == 'Stonnington' || datum['LGA NAME'] == 'Gannawarra'",
-        "value": 1
-        },
-        "value": 0
-        },
-        "tooltip": 
-        [
-          {"field": "LGA NAME", "type": "nominal", "title": "Local Government Area"},
-          {"field": "Median", "type": "quantitative", "title": "Median Income $"},
+        "color": {"title": "Region", "field": "Area", "type": "nominal"},
+        "size": {"field": "Earners", "type": "quantitative"},
+        "tooltip": [
+          {
+            "field": "LGA NAME",
+            "type": "nominal",
+            "title": "Local Government Area"
+          },
+          {
+            "field": "Median",
+            "type": "quantitative",
+            "title": "Median Income $"
+          },
           {"field": "Mean", "type": "quantitative", "title": "Average Income $"}
         ]
       }
     },
     {
-        "mark": { "type":"rule", "tooltip": true},
-        "encoding": {
-          "y": {"datum": 30000 },
-          "x": {"datum": 30000 },
-          "y2": {"datum": 70000 },
-          "x2": {"datum": 70000 },
-          "color": {"value": "orange"},
-          "size": {"value": 1}
-          
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "middle",
+        "dx": -12,
+        "fontSize": 11.5,
+        "fontStyle": "italic"
+      },
+      "encoding": {
+        "text": {"field": "LGA NAME", "type": "nominal"},
+        "color": {"value": "black"},
+        "opacity": {
+          "condition": {
+            "test": "datum['LGA NAME'] == 'Monash' || datum['LGA NAME'] == 'Melbourne' || datum['LGA NAME'] == 'Stonnington' || datum['LGA NAME'] == 'Gannawarra'",
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "LGA NAME",
+            "type": "nominal",
+            "title": "Local Government Area"
+          },
+          {
+            "field": "Median",
+            "type": "quantitative",
+            "title": "Median Income $"
+          },
+          {"field": "Mean", "type": "quantitative", "title": "Average Income $"}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "rule", "tooltip": true},
+      "encoding": {
+        "y": {"datum": 0},
+        "x": {"datum": 0},
+        "y2": {"datum": 111000},
+        "x2": {"datum": 111000},
+        "color": {"value": "orange"},
+        "size": {"value": 1}
       }
     }
-   ]
-  }
+  ]
+}
