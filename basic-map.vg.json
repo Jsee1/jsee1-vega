@@ -22,19 +22,30 @@
       }
     ],
 
-    "projection": {"type": "equirectangular"},
+    "projection": {
+      "type": "equirectangular"
+    },
     "mark": {
         "type": "geoshape",
         "stroke": "#757575",
         "strokeWidth": 0.5
-      },
+    },
       "encoding": {
         "color": {
           "field": "coef",
           "type": "quantitative"
           },
         "tooltip": [
-          {"field": "coef", "type": "nominal", "title": "Name"}
+          {
+            "field": "properties.ABB_NAME",
+            "type" : "nominal",
+            "title": "Local Government Area Name"
+          },
+          {
+          "field": "coef", 
+          "type": "quantitative", 
+          "title": "Gini Score"
+          }
         ]
       }
 

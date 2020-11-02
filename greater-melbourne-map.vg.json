@@ -1,0 +1,52 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 450,
+  "height": 500,
+  "title": "Gini index of Victorian Local Government Areas",
+  "data": {
+      "url": "https://raw.githubusercontent.com/Jsee1/jsee1-vega/main/js/Greater%20Melbourne%20shape.json",
+    "format": {
+      "type": "topojson", 
+      "feature": "VIC_LGA_POLYGON_SHP"}
+  },
+  "transform": [
+    {
+      "lookup": "properties.ABB_NAME",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/Jsee1/vegaIncome/main/data/strippedData.csv"
+        },
+        "key": "LGA NAME",
+        "fields": ["coef"]
+      }
+    }
+  ],
+
+  "projection": {
+    "type": "equirectangular"
+  },
+  "mark": {
+      "type": "geoshape",
+      "stroke": "#757575",
+      "strokeWidth": 0.5
+  },
+    "encoding": {
+      "color": {
+        "field": "coef",
+        "type": "quantitative"
+        },
+      "tooltip": [
+        {
+          "field": "properties.ABB_NAME",
+          "type" : "nominal",
+          "title": "Local Government Area Name"
+        },
+        {
+        "field": "coef", 
+        "type": "quantitative", 
+        "title": "Gini Score"
+        }
+      ]
+    }
+
+}
