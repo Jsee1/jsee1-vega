@@ -7,7 +7,12 @@
   "encoding": {
     "y": {
       "field": "Country",
-      "type": "nominal"
+      "type": "nominal",
+      "sort": 
+      {
+        "op": "sum", 
+        "field": "StateGini"
+      }
     }
   },
   "layer": [{
@@ -30,7 +35,7 @@
       "x": {
         "field": "GiniIndex",
         "type": "quantitative",
-        "scale": {"domain": [0.3, 0.6]},
+        "scale": {"domain": [0.0, 0.6]},
         "title": "Country Gini Index"
       },
       "fillOpacity": {
