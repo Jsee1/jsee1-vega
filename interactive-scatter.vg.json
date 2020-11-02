@@ -47,8 +47,39 @@
   },
       "mark": "circle",
       "encoding": {
-        "color": {"title": "Region", "field": "Area", "type": "nominal"},
-        "size": {"field": "Earners", "type": "quantitative"},
+        "color": {"title": "Region", 
+        "field": "Area", 
+        "type": "nominal",
+        "scale": {
+        "domain": [
+          "Greater Melbourne",
+          "Mallee",
+          "Hume",
+          "Grampians",
+          "South West Victoria",
+          "Gippsland"
+        ],
+        "range": [
+          "#e41a1c",
+          "#984ea3",
+          "#ff7f00",
+          "#a6cee3",
+          "#377eb8",
+          "#a65628"
+        ]
+          },
+          "opacity": {
+          "value": 0.6
+          }
+        },
+        "size": {"field": "Earners", 
+          "type": "quantitative",
+          "scale": {
+            "type": "threshold",
+            "domain": [10000, 40000, 70000, 110000, 150000],
+            "range" : [50, 100, 150, 200, 250]
+          }
+        },
         "tooltip": [
           {
             "field": "LGA NAME",
@@ -60,7 +91,12 @@
             "type": "quantitative",
             "title": "Median Income $"
           },
-          {"field": "Mean", "type": "quantitative", "title": "Average Income $"}
+          {"field": "Mean", 
+            "type": "quantitative", 
+            "title": "Average Income $"},
+          {"field": "Earners", 
+            "type": "quantitative", 
+            "title": "Number of Earners $"}
         ]
       }
     },
@@ -94,7 +130,12 @@
             "type": "quantitative",
             "title": "Median Income $"
           },
-          {"field": "Mean", "type": "quantitative", "title": "Average Income $"}
+          {"field": "Mean", 
+            "type": "quantitative", 
+            "title": "Average Income $"},
+          {"field": "Earners", 
+            "type": "quantitative", 
+            "title": "Number of Earners $"}
         ]
       }
     },
